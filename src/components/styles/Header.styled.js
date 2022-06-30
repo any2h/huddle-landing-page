@@ -11,6 +11,10 @@ export const Nav = styled.nav`
     align-items: center;
     margin-bottom: 40px;
 
+    &+div > * {
+        flex: 1;
+    }
+
     @media (max-width: ${({theme}) => theme.mobile}) {
         flex-direction: column;
         gap: 2.5rem;
