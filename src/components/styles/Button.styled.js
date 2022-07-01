@@ -10,9 +10,10 @@ export const Button = styled.button`
     box-shadow: 0 0 10px rgba(0, 0, 0, .15);
     background-color: ${({bg}) => bg || '#fff'};
     color: ${({color}) => color || '#333'};
+    transition: all .15s ease-in-out;
 
     &:hover {
-        opacity: .9;
+        opacity: .6;
         transform: scale(0.97);
     }
 `

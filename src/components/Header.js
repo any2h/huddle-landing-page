@@ -12,7 +12,7 @@ export default function Header() {
                     <Button>Try It Free</Button>
                 </Nav>
 
-                <Flex>
+                <Flex className='hero-section'>
                     <div>
                         <h1>Build The Community Your Fans Will Love</h1>
 
@@ -22,7 +22,7 @@ export default function Header() {
                             you engage in genuine discussion.
                         </p>
 
-                        <Button bg="#ff0099" color="#fff" >
+                        <Button bg="#FE52C0" color="#fff" >
                             Get Started For Free
                         </Button>
                     </div>

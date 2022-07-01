@@ -2,7 +2,13 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
     background-color: ${({theme}) => theme.colors.header};
-    padding: 40px 0;
+    background-image: url('./images/bg-hero-desktop.svg');
+    background-position: center;
+    padding: 50px 0;
+
+    h1 {
+        font-size: clamp(24px, 4vw, 34px);
+    }
 `
 
 export const Nav = styled.nav`
@@ -11,9 +17,16 @@ export const Nav = styled.nav`
     align-items: center;
     margin-bottom: 40px;
 
-    &+div > * {
-        flex: 1;
-    }
+    +.hero-section {
+
+        > div {
+            flex: 2;
+        }
+
+        > img {
+            flex: 3;
+        }
+    } 
 
     @media (max-width: ${({theme}) => theme.mobile}) {
         flex-direction: column;
@@ -30,7 +43,7 @@ export const Image = styled.img`
     margin-left: 40px;
 
     @media (max-width: ${({theme}) => theme.mobile}) {
-        margin: 40px 0 30px;
+        margin: 40px 0 10px;
         /* margin: 2rem 0 1.5rem; */
     }
 `
