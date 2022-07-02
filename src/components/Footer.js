@@ -1,5 +1,4 @@
 import SocialIcons from "./SocialIcons";
-import { LocationIcon, PhoneIcon, MailIcon } from './SocialIcons';
 import { MdLocationOn, MdPhoneInTalk } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { StyledFooter } from "./styles/Footer.styled";
@@ -10,7 +9,8 @@ export default function Footer() {
     return (
         <StyledFooter>
             <Container>
-            <img src="./images/logo_white.svg" alt=""/>
+                <img src="./images/logo_white.svg" alt=""/>
+
                 <Flex>
                     <ul>
                         <li>
@@ -23,7 +23,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <span><IoIosMail /></span>
-                            example@huddle.com
+                            solo_gosu@hotmail.com
                         </li>
                     </ul>
 

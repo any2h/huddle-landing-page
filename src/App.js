@@ -31,7 +31,7 @@ export default function App() {
       <>
         <GlobalStyles/>
         <Header />
-        <Container padding="80px 20px 0 20px">
+        <Container as="main" padding="80px 20px 0 20px">
           {cardElements}
           <Cta />
         </Container>
