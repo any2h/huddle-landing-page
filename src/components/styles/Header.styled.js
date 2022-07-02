@@ -9,6 +9,25 @@ export const StyledHeader = styled.header`
     h1 {
         font-size: clamp(24px, 4vw, 34px);
     }
+
+    p {
+        opacity: 1;
+    }
+
+    section {
+
+        > div {
+            flex: 2;
+
+            > button {
+                margin-top: 1rem;
+            }
+        }
+
+        > img {
+            flex: 3;
+        }
+    }
 `
 
 export const Nav = styled.nav`
@@ -17,20 +36,16 @@ export const Nav = styled.nav`
     align-items: center;
     margin-bottom: 40px;
 
-    +.hero-section {
-
-        > div {
-            flex: 2;
-        }
+    @media (max-width: ${({theme}) => theme.mobile}) {
+        gap: 2.5rem;
 
         > img {
-            flex: 3;
+            width: 40%;
         }
-    } 
 
-    @media (max-width: ${({theme}) => theme.mobile}) {
-        flex-direction: column;
-        gap: 2.5rem;
+        > button {
+            padding: .5rem 2rem;
+        }
     }
 `
 

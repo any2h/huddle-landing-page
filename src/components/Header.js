@@ -12,7 +12,7 @@ export default function Header() {
                     <Button>Try It Free</Button>
                 </Nav>
 
-                <Flex className='hero-section'>
+                <Flex as='section' className='hero-section'>
                     <div>
                         <h1>Build The Community Your Fans Will Love</h1>
 

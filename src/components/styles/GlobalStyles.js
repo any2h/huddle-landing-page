@@ -7,19 +7,23 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background: ${({ theme }) => theme.colors.body};
-        color: hsl(192, 100%, 9%);
+        color: ${({theme}) => theme.colors.fontColor};
         font-family: 'Poppins', sans-serif;
-        font-size: 1.15em;
         margin: 0;
     }
 
     p {
-        opacity: 0.6;
+        opacity: 0.5;
         line-height: 1.5;
     }
 
     img {
         max-width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 `
 

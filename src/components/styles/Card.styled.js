@@ -6,7 +6,7 @@ export const StyledCard = styled.div`
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-    margin: 40px 0;
+    margin: 2.25rem 0;
     padding: 60px;
     gap: 2rem;
     flex-direction: ${({layout}) => layout || 'row'};

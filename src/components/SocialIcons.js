@@ -1,4 +1,4 @@
-import { FaTwitter, FaFacebook, FaLinkedin } from 'react-icons/fa'
+import { FaTwitter, FaFacebook, FaInstagram, } from 'react-icons/fa'
 import { StyledSocialIcons } from './styles/SocialIcons.styled'
 
 export default function SocialIcons() {
@@ -17,7 +17,7 @@ export default function SocialIcons() {
             </li>
             <li>
                 <a href="#">
-                    <FaLinkedin />
+                    <FaInstagram />
                 </a>
             </li>
         </StyledSocialIcons>
