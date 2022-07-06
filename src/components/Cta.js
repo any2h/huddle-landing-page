@@ -24,15 +24,15 @@ const StyledCta = styled.div`
     
     > button {
         padding: clamp(.95rem, 2vw, 1.75rem) clamp(2.5rem, 8vw, 7.5rem);
-
-        @media (min-width: ${({theme}) => theme.mobile}) {
-            font-size: 1rem;
-        }
     }
 
     @media (max-width: ${({theme}) => theme.mobile}) {
         h3 {
             font-size: 1.125rem;
+        }
+
+        button {
+            font-size: 1rem;
         }
     }
 `
