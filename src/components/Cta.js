@@ -8,7 +8,7 @@ const StyledCta = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1.25rem;
-    width: clamp(26.5rem, 60vw, 45rem);
+    width: clamp(20.5rem, 75vw, 45rem);
     height: clamp(212px, 30vw, 280px);
     margin: 0 auto;
     padding: 2.25rem 4rem;
@@ -23,7 +23,7 @@ const StyledCta = styled.div`
     }
     
     > button {
-        padding: clamp(.95rem, 2vw, 1.75rem) clamp(4rem, 12.5vw, 7.5rem);
+        padding: clamp(.95rem, 2vw, 1.75rem) clamp(2.5rem, 8vw, 7.5rem);
 
         @media (min-width: ${({theme}) => theme.mobile}) {
             font-size: 1rem;
@@ -33,10 +33,6 @@ const StyledCta = styled.div`
     @media (max-width: ${({theme}) => theme.mobile}) {
         h3 {
             font-size: 1.125rem;
-        }
-
-        button {
-            padding:.95rem 4rem;
         }
     }
 `
